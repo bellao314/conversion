@@ -1,0 +1,27 @@
+h1 {
+  text-align: center;
+}
+
+#convert {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  text-align: center;
+}
+
+#original, #new {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: gray;
+  height: 100px;
+  width: 600px;
+  margin: auto;
+}
+
+#len1, #len2, #wid1, #wid2, #submit, #reset, #choose, #metric {
+  width: 500px;
+  margin: auto;
+}
