@@ -10,8 +10,7 @@
     <h1>Poster Conversion</h1>
     <form id="metric" name="metric">
       <select name="choose" id="choose" form="metric" onchange="change()">
-        <option value="null">Choose Metric</option>
-        <option value="in" id="in">Inches</option>
+        <option value="in" id="in">Inches (default)</option>
         <option value="ft" id="ft">Feet</option>
       </select>
     </form><br>
@@ -27,11 +26,15 @@
       <label for="new">New Size</label>
       <br>
       <div id="new">
-        <select name="len2" id="len2" form="convert" required>
+        <!-- <div class="autocomplete">
+          <input type="number" step="0.01" name="len2" id="len2" placeholder="Length">
+        </div> -->
+        <input type="number" step="0.01" name="len2" id="len2" placeholder="Length">
+        <!-- <select name="len2" id="len2" form="convert" required>
           <option id="paperWidth">Paper Width (in)</option>
           <option value="36" id="36">36</option>
           <option value="42" id="42">42</option>
-        </select>
+        </select> -->
         <!-- <input type="number" step="0.01" name="len2" id="len2" placeholder="Length"> -->
         <input type="number" step="0.01" name="wid2" id="wid2" placeholder="Width">
         <!-- <output name="wid2" id="wid2" for="len1 wid1 len2">Width</output> -->
@@ -42,5 +45,6 @@
       <input type="reset" name="reset" id="reset">
     </form>
     <script src="./index.js"></script>
+    <!-- <script src="./index.js">autocomplete(document.getElementById("len2"), sizes);</script> -->
   </body>
 </html>
