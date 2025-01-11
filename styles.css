@@ -1,5 +1,14 @@
+body {
+  background-color: #F0F0F0;
+  font-family: "Moderustic", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 h1 {
   text-align: center;
+  font-size: 2.5em;
 }
 
 #convert {
@@ -9,21 +18,44 @@ h1 {
 
 label {
   text-align: center;
+  font-size: 1.5rem;
 }
 
 #original, #new {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background-color: gray;
-  height: 100px;
-  width: 600px;
+  background-color: #0042AD;
+  box-shadow: 2px 2px 0.5em 0.5em lightgray;
+  height: 125px;
+  width: 70%;
   margin: auto;
 }
 
-#len1, #len2, #wid1, #wid2, #submit, #reset, #choose, #metric {
-  width: 500px;
+#len1, #len2, #wid1, #wid2 {
+  width: 50%;
+  height: 40px;
   margin: auto;
+  padding-left: 10px;
+  font-family: "Moderustic", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#choose {
+  padding-left: 10px;
+}
+
+#submit, #reset, #choose {
+  width: 20%;
+  height: 50px;
+  margin: auto;
+  background-color: lightgray;
+  font-family: "Moderustic", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .autocomplete {
